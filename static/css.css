@@ -1,0 +1,87 @@
+body{
+    background-color: gray;
+}
+.all {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;    /* 垂直居中 */
+    height: 100vh         /* 高度占满视口 */
+}
+@media (max-width: 576px) {
+    .all{
+        height: 80vh 
+    }
+}
+.clickme{
+    width: 100%;
+    height: 100%;
+    font-size: clamp(50px, 5vw, 100px);
+    border-radius: 0%;
+    background-color: gray;
+    border: none;
+    color: black;
+}
+.modal {
+    background-color: gray;
+}
+.modal-dialog{
+    margin-top: 200px;
+}
+.modal-body{
+    display: flex;
+    justify-content: center;
+}
+.modal-body .input-container {
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+}
+.modal-title{
+    font-weight: bold;
+}
+.modal-title-mx{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button{
+    flex: 1;
+}
+.go{
+    font-weight: bold;
+    font-size: clamp(50px, 5vw, 100px);
+}
+.modal_people_footer{
+    border-top: none;padding: 8px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-button {
+    flex: 1; /* 每个元素占据相等的宽度 */
+    display: flex;
+    justify-content: center;
+    margin: 0 5px; /* 添加一些间距以分开按钮 */
+}
+
+.btn {
+    width: 100%; /* 使按钮占满父容器的宽度 */
+    max-width: 100%; /* 防止按钮超出容器 */
+    box-sizing: border-box; /* 包含内边距和边框在宽度内 */
+}
+.center-flex{
+    justify-content: center;
+    display: flex;
+}
+.around-flex {
+    display: flex;
+    justify-content: space-between; /* 使按钮均匀分布 */
+}
+.btn-container {
+    flex: 1; /* 使每个按钮容器占据相等的宽度 */
+    margin: 0 5px; /* 添加左右间距以分开按钮 */
+}
